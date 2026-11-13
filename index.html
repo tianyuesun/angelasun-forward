@@ -73,11 +73,24 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .cv1 .big i{font-style:normal;color:inherit}
 .cv1 .tl{font-size:.6875rem;letter-spacing:.22em;color:#6F7A70;line-height:1.7}
 .cv1 .pill{margin-top:6px;padding:7px 22px;border-radius:30px;background:#5E9558;color:#fff;font-weight:600;font-size:.8125rem}
-.cv2{background:#F2F4F5;color:#13202A;justify-content:space-between}
-.cv2 .q{font-family:var(--display);font-size:clamp(1.4rem,2.6vw,1.9rem);line-height:1.08;margin-top:22px}
-.cv2 ol{display:flex;flex-wrap:wrap;gap:5px}
-.cv2 li{padding:3px 9px;border:1px solid #2F6F86;border-radius:20px;font-size:.75rem;color:#1F5466;background:#fff}
-.cv2 li.k{background:#2F6F86;color:#fff}
+.cv2{color:#fff;justify-content:space-between;background:
+ linear-gradient(180deg,transparent 0 62%,#E8A586 62%,#B07F92 72%,#5A5488 88%,#2A3060 100%),
+ radial-gradient(circle at 70% 54%,#FFF3DE 0 5.6%,rgba(255,240,214,.55) 6.2%,rgba(255,226,190,.18) 10%,rgba(255,214,170,0) 26%),
+ linear-gradient(180deg,#262E60 0%,#5E5596 30%,#C98A93 48%,#F2AE88 57%,#FFD3A0 62%)}
+.cv2::before{content:"";position:absolute;left:60%;right:20%;top:63.5%;bottom:6%;background:repeating-linear-gradient(180deg,rgba(255,226,176,.75) 0 2px,transparent 2px 9px);-webkit-mask:linear-gradient(90deg,transparent,#000 35%,#000 65%,transparent);mask:linear-gradient(90deg,transparent,#000 35%,#000 65%,transparent);opacity:.8}
+.cv2::after{content:"";position:absolute;inset:12px;pointer-events:none;background:
+ linear-gradient(#fff,#fff) left top/14px 1.5px no-repeat,linear-gradient(#fff,#fff) left top/1.5px 14px no-repeat,
+ linear-gradient(#fff,#fff) right top/14px 1.5px no-repeat,linear-gradient(#fff,#fff) right top/1.5px 14px no-repeat,
+ linear-gradient(#fff,#fff) left bottom/14px 1.5px no-repeat,linear-gradient(#fff,#fff) left bottom/1.5px 14px no-repeat,
+ linear-gradient(#fff,#fff) right bottom/14px 1.5px no-repeat,linear-gradient(#fff,#fff) right bottom/1.5px 14px no-repeat;opacity:.75}
+.cv2{padding:24px 28px}.cv2 small{top:24px;left:28px;color:#fff;opacity:.9;text-shadow:0 1px 8px rgba(14,19,34,.4)}
+.cv2 .q{position:relative;font-family:var(--display);font-size:clamp(1.5rem,2.7vw,2rem);line-height:1.08;margin-top:26px;text-shadow:0 2px 16px rgba(14,19,34,.35)}
+.cv2 .steps{position:relative;display:grid;grid-template-columns:repeat(6,1fr);border-top:1.5px solid rgba(255,255,255,.6);margin:30px 2px 30px}
+.cv2 .steps li{position:relative;height:0}
+.cv2 .steps li::before{content:"";position:absolute;top:-7px;left:0;width:2px;height:13px;border-radius:1px;background:#F0A868}
+.cv2 .steps li span{position:absolute;left:-1px;top:10px;font-size:.8125rem;font-weight:600;color:#fff;text-shadow:0 1px 8px rgba(14,19,34,.55);white-space:nowrap}
+.cv2 .steps li:nth-child(even) span{top:auto;bottom:10px}
+.cv2 .steps li.ai span{color:#C7D2FF}.cv2 .steps li.ai::before{background:#8DA2FF;width:3px}
 .cv3{background:linear-gradient(180deg,#9fb0ec 0%,#d3bfe8 45%,#f5cbd2 75%,#fde6c6 100%);color:#22193a;justify-content:space-between}
 .cv3 .mo{display:flex;justify-content:space-between;align-items:baseline;margin-top:20px}
 .cv3 .mo span:first-child{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(2.4rem,5vw,3.6rem);line-height:1}
@@ -135,7 +148,6 @@ body{font-size:17.5px}
 .cover small{font-size:.8125rem}
 .cv1 .tl{font-size:.75rem}
 .cv1 .pill{font-size:.875rem}
-.cv2 li{font-size:.8125rem}
 .txt .what,.txt .facts{font-size:1rem}
 .txt .story{font-size:1.0625rem}
 .txt .note{font-size:.9375rem}
@@ -194,7 +206,7 @@ footer{font-size:.9375rem}
   <article class="proj" id="wsas" data-n="2">
     <div class="meta"><p class="n">02</p><p class="verb" data-zh="追问边界">Question</p><p class="when" data-zh="2026 年 8 月，11 月修订">August 2026, revised in November</p></div>
     <div class="body">
-      <a class="cover cv2" href="https://where-should-ai-stop.vercel.app/" target="_blank" rel="noopener"><small data-zh="独立探索性研究">Independent exploratory research</small><p class="q" data-zh="人工智能<br>应该止步何处？">Where Should AI&nbsp;Stop?</p><ol aria-label="Handoff stages"><li data-zh="意图">Intent</li><li data-zh="委托">Delegate</li><li data-zh="执行">Act</li><li class="k" data-zh="审阅">Review</li><li class="k" data-zh="介入">Intervene</li><li class="k" data-zh="确认">Approve</li></ol></a>
+      <a class="cover cv2" href="https://where-should-ai-stop.vercel.app/" target="_blank" rel="noopener"><small data-zh="独立探索性研究">Independent exploratory research</small><p class="q" data-zh="人工智能<br>应该止步何处？">Where Should AI&nbsp;Stop?</p><ol class="steps" aria-label="Handoff stages"><li><span data-zh="意图">Intent</span></li><li><span data-zh="委托">Delegate</span></li><li class="ai"><span data-zh="执行">Act</span></li><li><span data-zh="审阅">Review</span></li><li><span data-zh="介入">Intervene</span></li><li><span data-zh="确认">Approve</span></li></ol></a>
       <div class="txt">
         <h2 data-zh="人工智能应该止步何处？">Where Should AI Stop?</h2>
         <p class="what" data-zh="从视频剪辑到心理照护，追问 AI 该在哪里把决定交还给人">Where AI should hand decisions back to people, from video editing to care</p>
