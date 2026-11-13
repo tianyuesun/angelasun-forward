@@ -126,6 +126,22 @@ html:lang(zh-CN) *{font-style:normal}
 html:lang(zh-CN) .band h1{letter-spacing:0;line-height:1.25}
 html:lang(zh-CN) body{line-height:1.75}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+/* readability: larger minimum sizes */
+body{font-size:17.5px}
+.lang{font-size:.875rem}
+.thread .pts a{font-size:.95rem}
+.intro{font-size:1.125rem}
+.meta .when{font-size:.9375rem}
+.cover small{font-size:.8125rem}
+.cv1 .tl{font-size:.75rem}
+.cv1 .pill{font-size:.875rem}
+.cv2 li{font-size:.8125rem}
+.txt .what,.txt .facts{font-size:1rem}
+.txt .story{font-size:1.0625rem}
+.txt .note{font-size:.9375rem}
+.link .cols div{font-size:1rem}
+.close .sig,.close .contact{font-size:1rem}
+footer{font-size:.9375rem}
 </style>
 </head>
 <body>
@@ -152,7 +168,7 @@ html:lang(zh-CN) body{line-height:1.75}
 </header>
 
 <main class="wrap projects">
-  <p class="intro" data-zh="我从心理学出发，一直想更好地理解和帮助人的心灵。这四个项目都是我在 2026 年开始的，后一个都是从前一个留下的问题里长出来的。">I started in psychology, asking how we can better understand and help the human mind. I began these four projects in 2026, roughly in this order. Each one grew out of a question the one before it left open.</p>
+  <p class="intro" data-zh="我从心理学和传媒出发，一直想更好地理解和帮助人的心灵。这四个项目都是我在 2026 年开始的，后一个都是从前一个留下的问题里长出来的。">I started in psychology and media, asking how we can better understand and help the human mind. I began these four projects in 2026, roughly in this order. Each one grew out of a question the one before it left open.</p>
 
   <article class="proj" id="leave1" data-n="1">
     <div class="meta"><p class="n">01</p><p class="verb" data-zh="动手实践">Build</p><p class="when" data-zh="2026 年 7 月">July 2026</p></div>
@@ -178,17 +194,17 @@ html:lang(zh-CN) body{line-height:1.75}
   <article class="proj" id="wsas" data-n="2">
     <div class="meta"><p class="n">02</p><p class="verb" data-zh="追问边界">Question</p><p class="when" data-zh="2026 年 8 月">August 2026</p></div>
     <div class="body">
-      <a class="cover cv2" href="https://where-should-ai-stop.vercel.app/" target="_blank" rel="noopener"><small data-zh="独立探索性研究">Independent exploratory research</small><p class="q" data-zh="人工智能<br>应该止步何处？">Where Should AI&nbsp;Stop?</p><ol aria-label="Handoff stages"><li data-zh="意图">Intent</li><li data-zh="委托">Delegate</li><li data-zh="执行">Act</li><li class="k" data-zh="审阅">Review</li><li class="k" data-zh="介入">Intervene</li><li class="k" data-zh="批准">Approve</li></ol></a>
+      <a class="cover cv2" href="https://where-should-ai-stop.vercel.app/" target="_blank" rel="noopener"><small data-zh="独立探索性研究">Independent exploratory research</small><p class="q" data-zh="人工智能<br>应该止步何处？">Where Should AI&nbsp;Stop?</p><ol aria-label="Handoff stages"><li data-zh="意图">Intent</li><li data-zh="委托">Delegate</li><li data-zh="执行">Act</li><li class="k" data-zh="审阅">Review</li><li class="k" data-zh="介入">Intervene</li><li class="k" data-zh="确认">Approve</li></ol></a>
       <div class="txt">
         <h2 data-zh="人工智能应该止步何处？">Where Should AI Stop?</h2>
-        <p class="what" data-zh="关于 AI 辅助视频剪辑的用户体验研究">UX research on AI-assisted video editing</p>
+        <p class="what" data-zh="从视频剪辑到心理照护，追问 AI 该在哪里把决定交还给人">Where AI should hand decisions back to people, from video editing to care</p>
         <div class="story">
-          <p data-zh="黑箱的经历让我想知道：当 AI 能做越来越多的工作时，人们还想把哪些决定留给自己？我综合分析了创作者的公开讨论、行业资料和工具案例。">The black box left me with a question: as AI takes on more of the work, which decisions do people still want to keep? I synthesized public creator discussions, industry framing and tool examples to find out.</p>
+          <p data-zh="《留一点》留给我一个黑盒子。我在镜头后和剪辑台前待过很多年，知道一个剪辑点里藏着多少判断，于是我问：当 AI 承担越来越多的工作，人们还想把哪些决定留给自己？我综合分析了创作者的公开讨论、行业资料和工具案例。">Leave1% left me with a black box. I had spent years behind a camera and in the edit, so I knew how much judgment sits inside a single cut. I asked: as AI takes on more of the work, which decisions do people still want to keep? I synthesized public creator discussions, industry framing and tool examples to find out.</p>
         </div>
         <ul class="facts">
-          <li data-zh="人们愿意交出重复的执行工作，但会守住节奏、声音、故事、风格和最终判断。">People hand off repetitive execution but keep pacing, voice, story, style and final judgment.</li>
-          <li data-zh="四个条件会移动这条边界：风险高低、可修改性、意图和授权。">Four conditions move that boundary: stakes, editability, intent and authority.</li>
-          <li data-zh="三条设计原则：越界前先征得同意，保留已经可行的部分，把有意义的选择交还给人。">Three design principles: ask before crossing the boundary, keep what already works, and return the meaningful choices.</li>
+          <li data-zh="人们愿意交出重复的执行工作，但会守住节奏、表达、叙事、风格和最终决定。">People hand off repetitive execution but keep pacing, voice, story, style and the final call.</li>
+          <li data-zh="四个条件会移动这条边界：利害、可修改性、意图和授权；在心理健康照护中，它们更加关键。">Four conditions move that boundary: stakes, editability, intent and authority. In mental health care, they matter even more.</li>
+          <li data-zh="也回看我自己的工作：从全部交给 AI，到始终在场。">It also traces my own work, from handing everything to AI to staying in the loop.</li>
         </ul>
         <p class="lesson" data-zh="“AI 一路替人省去决定，直到某个决定值得由人来做。”">“AI removes decisions until a decision becomes worth making.”</p>
         <a class="open" href="https://where-should-ai-stop.vercel.app/" target="_blank" rel="noopener" data-zh="阅读这项研究">Read the study</a>
